@@ -5,9 +5,9 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "prod": "yarn run build && tsnd src/server.ts",
+    "prod": "npm run build && tsnd src/server.ts",
     "server": "ts-node ./src/server.ts",
-    "start": "yarn run server",
+    "start": "npm run server",
     "dev": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
     "knex:migrate:rollback": "knex --knexfile.ts migrate:rollback"
